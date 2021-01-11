@@ -1,0 +1,27 @@
+git version
+
+#Configure git credentials
+
+git config --global user.name "Fernando Rodrigues"
+git config --global user.email "fernandorfigueiredotec@gmail.com"
+git config --global --list
+
+git clone https://github.com/fernandortec/github-demo.git
+ls
+
+cd github-demo
+ls
+
+git status
+
+echo "Test Git Quick Start demo" >> start.txt # Create a txt file
+ls
+
+cat start.txt
+
+git status
+git add start.txt
+git status
+git commit -m "Adding start text file"
+git status
+git push origin master
